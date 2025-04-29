@@ -20,7 +20,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val numeroEstratto = intent.getIntExtra("NUMERO", -1)
         val textViewTitle = findViewById<TextView>(R.id.textView_numero)
-        textViewTitle.text = "${textViewTitle.text} $numeroEstratto"
+        textViewTitle.text = numeroEstratto.toString()
 
         val imageView = findViewById<ImageView>(R.id.image_dice)
         imageView.setImageResource(
