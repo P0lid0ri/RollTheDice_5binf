@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var btnRoll =  findViewById<Button>(R.id.buttonRoll)
         var text = findViewById<TextView>(R.id.textViewTitle)
-        var img = findViewById<ImageView>(R.id.imageViewDice)
+
 
         btnRoll.setOnClickListener(View.OnClickListener {
             var numero = estrazioneNumero()

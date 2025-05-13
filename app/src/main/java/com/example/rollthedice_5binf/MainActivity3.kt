@@ -16,7 +16,9 @@ class MainActivity3 : AppCompatActivity() {
         val esito = intent.getStringExtra("ESITO")
         val textViewTitle = findViewById<TextView>(R.id.esito_textView)
         textViewTitle.text = esito
-
+        val numerocoretto = intent.getIntExtra("ESTRAZIONE",-1)
+        val textView = findViewById<TextView>(R.id.num_gen)
+        textView.text= "il numero estratto è :  $numerocoretto"
 
 
 
